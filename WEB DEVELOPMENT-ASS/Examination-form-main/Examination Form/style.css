@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* header start */
+.logo{
+    width: 12rem;
+    padding-top: 10px;
+}
+.heading{
+    text-align: center;
+    padding-top: 40px;
+}
+.headings{
+    font-weight: 600;
+    font-size: 2em;
+    color: #53905E;
+}
+.subheadings{
+    font-weight: 600;
+    
+}
+/* header ends */
+hr {
+    border: none;
+    border-top: 3px double black;
+    color: black;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+hr:after {
+    background: #fff;
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}
+/* form start */
+.form{
+    background: rgb(22,148,11);
+    background: linear-gradient(90deg, rgba(22,148,11,1) 0%, rgba(29,185,16,1) 46%, rgba(214,240,212,1) 100%);
+}
+.h1{
+    text-align: center;
+    color: black;
+    font-weight: 800;
+    padding: 20px 0;
+}
+.personalDetails{
+    display: flex;
+    justify-content: center;
+   
+}
+
+.personalDetails td:nth-child(even){
+    padding-left: 20px;
+    
+  }
+.personalDetails td:nth-child(odd) h5{
+    font-weight: bold;
+    color: #fff;
+    padding-top: 5px;
+  }
+.personalDetails td:nth-child(even) input{
+    width: 100%;
+    padding-left: 10px;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.9) inset;
+    background-color: transparent;
+    color: #fff;
+  }
+::placeholder{
+   color: #fff;
+  }
+.personalDetails #gender input{
+      width: 20px;
+  }
+.personalDetails #nationality select{
+      width: 100%;
+  }
+.image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.subjects label{
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.subjects{
+    margin-left: 15%;
+}
+
+/* form end */
+#submits{
+    display: none;
+}
+#submits p{
+    color: black;
+}
+.btn{
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 425px){
+    .logo{
+        width: 9rem;
+        padding-top: 15px;
+    }
+    .logodiv{
+        display: flex;
+        justify-content: center;
+    }
+    .heading{
+        text-align: center;
+        padding-top: 25px;
+    }
+    .headings{
+        font-weight: 600;
+        font-size: 1.2em;
+        color: #53905E;
+    }
+    .subheadings{
+        font-weight: 600;
+        font-size: 1em;
+        
+    }
+    .personalDetails td:nth-child(odd) h5{
+        font-weight: bold;
+        color: #fff;
+        font-size: 0.8em;
+        margin-left: 20px;
+      }
+    .personalDetails td:nth-child(even){
+        padding-left: 0;
+        
+      }
+      ::placeholder{
+        color: #fff;
+        font-size: 0.8em;
+       }
+       .subjects label{
+        color: white;
+        font-size: 0.8em;
+        font-weight: bold;
+    }
+       .subjects{
+        margin-left: 20px;
+    }
+}
+@media only screen and (max-width: 320px){
+    .personalDetails td:nth-child(even) input{
+        width: 95%;
+      }
+    .personalDetails td:nth-child(even) input{
+        width: 95%;
+      }
+      .personalDetails #nationality select{
+        width: 95%;
+    }
+      .personalDetails select{
+        width: 95%;
+    }
+}
